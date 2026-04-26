@@ -6,7 +6,7 @@
 //paragrafo.innerHTML = "Escolha um número entre 1 e 10:";
 
 let listaDeNumerosSorteados = [];
-let numeroLimite = 20; //numero que vai ser usado no metodo gerarNumeroAleatorio() que vai determinar o intervalo de numeros do nosso jogo
+let numeroLimite = 30; //numero que vai ser usado no metodo gerarNumeroAleatorio() que vai determinar o intervalo de numeros do nosso jogo
 exibirMensagemInicial();
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
