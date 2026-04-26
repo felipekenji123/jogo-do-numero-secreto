@@ -6,7 +6,7 @@
 //paragrafo.innerHTML = "Escolha um número entre 1 e 10:";
 
 let listaDeNumerosSorteados = [];
-let numeroLimite = 10; //numero que vai ser usado no metodo gerarNumeroAleatorio() que vai determinar o intervalo de numeros do nosso jogo
+let numeroLimite = 20; //numero que vai ser usado no metodo gerarNumeroAleatorio() que vai determinar o intervalo de numeros do nosso jogo
 exibirMensagemInicial();
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
@@ -37,7 +37,7 @@ function verificarChute() {
 function exibirMensagemInicial() {
     //agora atribuimos os valores/parametros que as funções vão receber para preencher os campos h1 e p, neste caso
     exibirTextoNTela("h1", "JOGO DO NÚMERO SECRETO"); 
-    exibirTextoNTela("p", "Escolha um número entre 1 e 10:");
+    exibirTextoNTela("p", `Escolha um número entre 1 e ${numeroLimite}:`);
 }
 
 function exibirTextoNTela(tag, texto) { //essa função está sendo criada, para que não tenha que ficar escrevendo varias vezes o texto que está la no topo da tela, pois ele se repete
